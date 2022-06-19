@@ -293,8 +293,8 @@ livere:
 # gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
-  client_id: 35b9cad6697cf6bbbb43
-  client_secret: 266a4af0e1b99cb78511a9c1f865a87759fc422d
+  client_id: d57099a94c1eb289a24b
+  client_secret: 1eb28b8b9a9e3e36cd3f4d6cf5133aab72e81ec6
   repo: beimengyeyu.github.io
   owner: beimengyeyu
   admin: beimengyeyu
