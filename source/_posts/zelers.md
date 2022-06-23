@@ -48,4 +48,8 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: BepInEx
+      # Github空间有限 用完以后删掉
+      - uses: geekyeggo/delete-artifact@v1
+        with:
+          name: BepInEx
 ```
