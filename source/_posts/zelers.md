@@ -43,6 +43,7 @@ jobs:
           name: BepInEx
           path: BepInEx/
   upload_job:
+    needs: build_job #job 依赖
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v2
