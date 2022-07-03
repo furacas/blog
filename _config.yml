@@ -105,7 +105,6 @@ deploy:
   type: git
   repository: 
     github: git@github.com:beimengyeyu/beimengyeyu.github.io.git
-    coding: git@e.coding.net:beimengyeyu/beimengyeyu/beimengyeyu.git
   branch: master
   message: update post
 
