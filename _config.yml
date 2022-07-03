@@ -103,7 +103,9 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:beimengyeyu/beimengyeyu.github.io.git
+  repository: 
+    github: git@github.com:beimengyeyu/beimengyeyu.github.io.git
+    coding: git@e.coding.net:beimengyeyu/beimengyeyu/beimengyeyu.git
   branch: master
   message: update post
 
