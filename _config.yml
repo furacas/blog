@@ -110,9 +110,10 @@ deploy:
   - type: baidu_url_submitter     
 
 sitemap:
-  path: sitemap.xml
-  template: ./sitemap_template.xml
-
+  path:
+    - sitemap.xml
+    - sitemap.txt
+  template_txt: ./sitemap_template.xml
 baidu_url_submit:
   count: 100
   host: www.beimeng.org
