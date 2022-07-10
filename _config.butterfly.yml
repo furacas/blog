@@ -80,7 +80,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /images/avatar.jpeg
+  img: /img/avatar.jpeg
   effect: false
 
 # Disable all banner image
@@ -123,10 +123,10 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - /images/cover1.jpg
-    - /images/cover2.jpg
-    - /images/cover3.jpg
-    - /images/cover4.jpg
+    - /img/cover1.jpg
+    - /img/cover2.jpg
+    - /img/cover3.jpg
+    - /img/cover4.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
