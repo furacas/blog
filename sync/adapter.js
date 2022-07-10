@@ -139,14 +139,33 @@ module.exports = async function(post) {
   post = await imgDownload(post);
   const { body,title,created_at } = post;
   let raw = formatRaw(body);
-  let categoriesLine = raw.trim().split('\n')[0]
+  let tagsLine = raw.trim().split('\n')[0]
+  let categoriesLine = raw.trim().split('\n')[1]
   let tags = []
+  let categories = undefined;
+  if(tagsLine && tagsLine.startsWith("> ")){
+    raw = raw.replace(tagsLine,"")
+    tags = tagsLine.replace("> ","").trim().split(" ");
+  }
+
   if(categoriesLine && categoriesLine.startsWith("> ")){
     raw = raw.replace(categoriesLine,"")
-    tags = categoriesLine = categoriesLine.replace("> ","").trim().split(" ");
+    categories = categoriesLine.replace("> ","").trim();
   }
 
   const quoteTag = tags.map(t=>`'${t}'`);
 
-  return `---\ntitle: ${title}\ndate: ${created_at}\ntags: [${quoteTag}]\n---\n  \n${raw.trim()}`;
+  let result =  `---\ntitle: ${title}\ndate: ${created_at}\n`;
+  if(tags.length != 0){
+      result += `tags: [${quoteTag}]\n`
+  }
+
+  if(categories){
+    result += `category: ${categories}\n`
+}
+
+
+
+  result += `---\n  \n${raw.trim()}`
+  return result;
 };
