@@ -129,7 +129,6 @@ cover:
     - /img/cover4.jpg
     - /img/cover5.jpg
     - /img/cover6.jpg
-    - /img/cover7.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
