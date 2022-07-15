@@ -1,5 +1,5 @@
 diff --git a/node_modules/hexo-theme-butterfly/layout/includes/third-party/comments/gitalk.pug b/node_modules/hexo-theme-butterfly/layout/includes/third-party/comments/gitalk.pug
-index fccb64d..f81c14a 100644
+index fccb64d..ca9f066 100644
 --- a/node_modules/hexo-theme-butterfly/layout/includes/third-party/comments/gitalk.pug
 +++ b/node_modules/hexo-theme-butterfly/layout/includes/third-party/comments/gitalk.pug
 @@ -14,7 +14,7 @@ script.
@@ -7,7 +7,30 @@ index fccb64d..f81c14a 100644
          owner: '!{theme.gitalk.owner}',
          admin: ['!{theme.gitalk.admin}'],
 -        id: '!{md5(page.path)}',
-+        id: '!{md5(page.path.split("/").slice(-2)[0])}',
++        id: '!{pmd5(page.path.split("/").slice(-2)[0])}',
          updateCountCallback: commentCount
        },!{JSON.stringify(theme.gitalk.option)}))
  
+diff --git a/node_modules/hexo-theme-butterfly/scripts/helpers/page.js b/node_modules/hexo-theme-butterfly/scripts/helpers/page.js
+index aa2b74b..449fe16 100644
+--- a/node_modules/hexo-theme-butterfly/scripts/helpers/page.js
++++ b/node_modules/hexo-theme-butterfly/scripts/helpers/page.js
+@@ -9,6 +9,7 @@
+ 
+ const { stripHTML, escapeHTML, prettyUrls } = require('hexo-util')
+ const crypto = require('crypto')
++const md5 = require('blueimp-md5');
+ 
+ hexo.extend.helper.register('page_description', function () {
+   const { config, page } = this
+@@ -62,6 +63,10 @@ hexo.extend.helper.register('md5', function (path) {
+   return crypto.createHash('md5').update(decodeURI(this.url_for(path))).digest('hex')
+ })
+ 
++hexo.extend.helper.register('pmd5', function (path) {
++  return md5(path)
++})
++
+ hexo.extend.helper.register('injectHtml', function (data) {
+   let result = ''
+   if (!data) return ''

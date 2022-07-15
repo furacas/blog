@@ -82,6 +82,8 @@ const getGitalkId = ({
     return false;
   }
 
+  console.log(link.pathname)
+  console.log(link.pathname.split("/").slice(-2)[0])
   return md5(link.pathname.split("/").slice(-2)[0]);
 };
 
