@@ -1,0 +1,13 @@
+diff --git a/node_modules/hexo-theme-butterfly/layout/includes/third-party/comments/gitalk.pug b/node_modules/hexo-theme-butterfly/layout/includes/third-party/comments/gitalk.pug
+index fccb64d..f81c14a 100644
+--- a/node_modules/hexo-theme-butterfly/layout/includes/third-party/comments/gitalk.pug
++++ b/node_modules/hexo-theme-butterfly/layout/includes/third-party/comments/gitalk.pug
+@@ -14,7 +14,7 @@ script.
+         repo: '!{theme.gitalk.repo}',
+         owner: '!{theme.gitalk.owner}',
+         admin: ['!{theme.gitalk.admin}'],
+-        id: '!{md5(page.path)}',
++        id: '!{md5(page.path.split("/").slice(-2)[0])}',
+         updateCountCallback: commentCount
+       },!{JSON.stringify(theme.gitalk.option)}))
+ 

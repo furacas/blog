@@ -9,10 +9,11 @@
     "server": "hexo server",
     "sync": "yuque-hexo sync",
     "talk": "node gitalk-auto-init.js",
-    "d": "hexo clean && hexo generate && hexo deploy"
+    "d": "hexo clean && hexo generate && hexo deploy",
+    "postinstall": "patch-package"
   },
   "hexo": {
-    "version": "6.0.0"
+    "version": "6.2.0"
   },
   "dependencies": {
     "blueimp-md5": "^2.19.0",
@@ -44,5 +45,8 @@
     "postPath": "source/_posts",
     "mdNameFormat": "slug",
     "onlyPublished": true
+  },
+  "devDependencies": {
+    "patch-package": "^6.4.7"
   }
 }

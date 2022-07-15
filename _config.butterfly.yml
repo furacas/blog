@@ -292,7 +292,7 @@ disqusjs:
 livere:
   uid:
 
-# gitalk
+# npm i patch-package --save-dev
 # https://github.com/gitalk/gitalk
 gitalk:
   client_id: d57099a94c1eb289a24b
