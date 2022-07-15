@@ -75,7 +75,7 @@ const getGitalkId = ({
     return false;
   }
   // 如果不是文章链接，则不需要初始化
-  if (!/\/(\d{4})\/(\d{2})\/(\d{2})\//.test(link.pathname)) {
+  if (!/\/(\d{4})\//.test(link.pathname)) {
     return false;
   }
   if (!date) {
