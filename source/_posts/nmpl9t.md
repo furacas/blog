@@ -22,3 +22,5 @@ category: OD 逆向系列
 | jge      | 大于等于则跳              |
 | pop xxx  | xxx 出栈                  |
 | push xxx | xxx 压栈                  |
+
+如果想了解更详细可以参考一下[逆向汇编基础 ](https://www.beimeng.org/2022/kq0iqk/)
