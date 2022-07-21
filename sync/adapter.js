@@ -145,7 +145,7 @@ module.exports = async function(post) {
   let categories = undefined;
   if(tagsLine && tagsLine.startsWith("> ")){
     raw = raw.replace(tagsLine,"")
-    tags = tagsLine.replace("> ","").trim().split(" ");
+    tags = tagsLine.replace("> ","").trim().split("、");
   }
 
   if(categoriesLine && categoriesLine.startsWith("> ")){
