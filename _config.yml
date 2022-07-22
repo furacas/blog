@@ -114,6 +114,9 @@ sitemap:
     - sitemap.xml
     - sitemap.txt
   template_txt: ./sitemap_template.xml
+  rel: true
+  tags: false
+  categories: false
 baidu_url_submit:
   count: 100
   host: www.beimeng.org
