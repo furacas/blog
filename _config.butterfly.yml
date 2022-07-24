@@ -605,7 +605,7 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # loop (循環打字)
@@ -619,6 +619,8 @@ subtitle:
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
+    - 分享、交流、成长
+    - 成长、生命、幸福、还有朋友
 
 # Loading Animation (加載動畫)
 preloader: true
