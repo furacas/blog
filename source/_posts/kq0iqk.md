@@ -86,5 +86,3 @@ mov ebp,esp
 mov esp,ebp
 pop ebp
 ```
-
-# 本文未完，挖坑待更新
