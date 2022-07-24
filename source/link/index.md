@@ -14,6 +14,6 @@ comments: false
 ```
 name: 北梦的个人博客
 link: https://www.beimeng.org
-avatar: https://www.beimeng.org/img/avatar.jpg
+avatar: https://www.beimeng.org/img/avatar.png
 descr: 交流、分享、成长
 ```
