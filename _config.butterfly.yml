@@ -840,7 +840,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3723770318115951" crossorigin="anonymous"></script>
+    - <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3723770318115951" crossorigin="anonymous"></script>
   bottom:
     # - <script src="xxxx"></script>
 
