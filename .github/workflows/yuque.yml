@@ -29,4 +29,4 @@ jobs:
           with:
             deploykey: ${{ secrets.SSH_KEY }}
             username: beimengyeyu
-            email: beimengyeyu@outlook.com
+            email: me@beimengyeyu.com
