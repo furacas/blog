@@ -11,6 +11,19 @@ index fccb64d..ca9f066 100644
          updateCountCallback: commentCount
        },!{JSON.stringify(theme.gitalk.option)}))
  
+diff --git a/node_modules/hexo-theme-butterfly/layout/includes/third-party/comments/waline.pug b/node_modules/hexo-theme-butterfly/layout/includes/third-party/comments/waline.pug
+index 06e8078..c9e22f1 100644
+--- a/node_modules/hexo-theme-butterfly/layout/includes/third-party/comments/waline.pug
++++ b/node_modules/hexo-theme-butterfly/layout/includes/third-party/comments/waline.pug
+@@ -16,7 +16,7 @@ script.
+         serverURL: '!{serverURL}',
+         pageview: !{lazyload ? false : pageview},
+         dark: 'html[data-theme="dark"]',
+-        path: window.location.pathname,
++        path: window.location.pathname.split("/").slice(-2)[0],
+         comment: !{lazyload ? false : count},
+       }, !{JSON.stringify(option)}))
+     }
 diff --git a/node_modules/hexo-theme-butterfly/scripts/helpers/page.js b/node_modules/hexo-theme-butterfly/scripts/helpers/page.js
 index aa2b74b..449fe16 100644
 --- a/node_modules/hexo-theme-butterfly/scripts/helpers/page.js
