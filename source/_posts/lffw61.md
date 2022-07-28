@@ -4,19 +4,22 @@ date: 2022-07-27T11:59:59.000Z
 tags: ['安全']
 ---
   
-网上一大堆教程都是用`aircrack-ng`抓包，操作过程比较繁琐，明明 kali 都内置了自动化的`wifite`了。
+## 特别声明
+
+本文仅用于学习研究，切勿用于非法用途
 
 ## wifi 密码破解
 
+网上一大堆教程都是用`aircrack-ng`抓包，操作过程比较繁琐，明明 kali 都内置了自动化的`wifite`了。
 为了方便后面操作先切换到 root
 
 ```bash
 su root
 ```
 
-开启`wifite`监听
+启动`wifite`
 
-```
+```bash
 sudo wifite
 ```
 
@@ -55,8 +58,13 @@ aircrack-ng -w /usr/share/wordlists/rockyou.txt hs/handshake_2412016_58-41-20-91
 ![](images/FpIiuslJJL0fKDap3a22Xstb3Zp9.png)
 这里可以看出来能否破解的主要因素就是密码表是强大了。
 
+这里我准备了 3.95G 的常用 wifi 密码字典。可以关注公众号**全栈编程笔记**回复**破解字典**进行下载
+![](images/FkWDIrcBHMuM5BR-bfmam8dKIwn3.png)
+
 ### 选择 WPS 是 yes 的
+
+这种脚本会尝试破解 PIN
 
 ## ![](images/FurkEHeFD8YPNa2MMjHLBn0e4AHn.png)
 
-脚本也会进行自动跑。这种跑出来只是时间的问题。
+虽然路由器会防止 PIN 攻击，但这种跑出来只是时间的问题。
