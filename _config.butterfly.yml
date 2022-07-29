@@ -198,10 +198,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: /img/wepay.jpg
+    - img: /img/wepay.png
       link:
       text: 微信
-    - img: /img/alipay.jpg
+    - img: /img/alipay.png
       link:
       text: 支付宝
 
