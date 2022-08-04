@@ -1,11 +1,20 @@
 ---
 title: 情侣风格的Hexo主题Brave
 date: 2022-08-03T11:43:39.000Z
+tags: ['hexo']
 ---
   
 ## 主题介绍
 
 该主题最初版是 typeecho 主题[Brave](https://github.com/zwying0814/Brave)移植过来的，感谢原作者 🙏。
+
+## ![](images/li6zKt6OIFnhG-IWfwngJe4ozb7n.png)
+
+## ![](images/Fh6uQije9537ULSShlbrKbr3W0Ku.png)
+
+## ![](images/FvgA8i4BMP73bMkCCEL0fCslAVti.png)
+
+## ![](images/FpKxjSaNGczWrZgxRCpSqMF7ZZxi.png)
 
 ## 主题安装
 
