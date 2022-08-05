@@ -16,6 +16,8 @@ tags: ['hexo']
 
 ## ![](images/FpKxjSaNGczWrZgxRCpSqMF7ZZxi.png)
 
+演示地址 [https://l.beimengyeyu.com/](https://l.beimengyeyu.com/)
+
 ## 主题安装
 
 ### 安装主题
