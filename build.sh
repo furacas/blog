@@ -3,7 +3,7 @@ set -e
 npm install
 npm run sync
 npm run build
-npm run talk
+# npm run talk
 if [ -n "$(git status -s)" ];then
     git add .
     git config --global user.name "beimengyeyu"
