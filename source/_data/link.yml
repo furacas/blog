@@ -1,10 +1,6 @@
 - class_name: '<i class="fas fa-fan" style="color:#00cccc;padding-right: 0.4rem"></i>友情链接'
   class_desc: '<span style="font-style: italic;">可爱的朋友在这里</span>'
   link_list:
-    - name: 破晓
-      link: https://poxiao.tk/
-      avatar: https://poxiao.tk/img/bg/avatar.webp
-      descr: 日拱一卒，功不唐捐
     - name: GochenRyan
       link: https://gochenryan.github.io/
       avatar: https://avatars.githubusercontent.com/u/15121614?v=4
