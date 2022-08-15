@@ -1,38 +1,31 @@
 {
-    "name": "北梦的个人博客",
-    "short_name": "北梦夜雨",
-    "theme_color": "#3a311c",
-    "background_color": "#3a311c",
+    "theme_color": "#f69435",
+    "background_color": "#f69435",
     "display": "standalone",
-    "Scope": "/",
+    "scope": "/",
     "start_url": "/",
-    "icon": [
-      {
-        "src": "/pwa/128.png",
-        "sizes": "128x128",
-        "type": "image/png"
-      },
-      {
-        "src": "/pwa/144.png",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": "/pwa/192.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      },
-      {
-        "src": "/pwa/256.png",
-        "sizes": "256x256",
-        "type": "image/png"
-      },
-      {
-        "src": "/pwa/512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
-    ],
-    "splash_pages": null
-  }
-  
+    "name": "\u5317\u68a6\u7684\u4e2a\u4eba\u535a\u5ba2",
+    "short_name": "\u5317\u68a6\u591c\u96e8",
+    "icons": [
+        {
+            "src": "/pwa/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/pwa/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/pwa/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/pwa/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
