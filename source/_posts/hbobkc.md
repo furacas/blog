@@ -11,7 +11,7 @@ tags: ['code-server','瞎折腾','Github Action']
 ## 定制过程
 
 定制一个带有 code-server 的镜像，既包含 code-server 又包含自己想要的工具。
-下面列出主要过程，完整版可以直接看这个文件
+下面列出主要过程，完整版可以直接看[这个文件](https://github.com/beimengyeyu/my-code-server/blob/main/Dockerfile)
 
 ```dockerfile
 FROM codercom/code-server:latest
@@ -76,6 +76,35 @@ RUN HOME=/home/coder code-server \
   --install-extension tabnine.tabnine-vscode
 ```
 
-## 使用
+## Github Action 构建
 
-使用**docker-compose**编排部署
+```yaml
+name: Publish Docker image
+
+on: # 配置触发workflow的事件
+  push:
+    branches: # master分支有push时触发此workflow
+      - "main"
+jobs:
+  push_to_registry:
+    name: Push Docker image to Docker Hub
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v2 # docker build & push
+        with:
+          context: .
+          push: true
+          tags: beimengyeyu/code-server:latest
+```
+
+## 账号配置
+
+在实际的使用过程中，还需要有一些账号信息，但是这些信息不方便打在公开镜像里，所以在实际的使用过程中我再上述镜像的基础上又包了一层。
