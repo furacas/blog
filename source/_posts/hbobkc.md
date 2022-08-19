@@ -17,14 +17,6 @@ tags: ['code-server','瞎折腾','Github Action']
 FROM codercom/code-server:latest
 ```
 
-### 配置 ssh
-
-这里我使用宿主机的 ssh 配置，为了安全起见，使用**secrets**的方式进行配置
-
-```dockerfile
-RUN ln -s /run/secrets/host_ssh_key ~/.ssh/id_rsa
-```
-
 ### 配置 git
 
 ```dockerfile
