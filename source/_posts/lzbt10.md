@@ -63,3 +63,9 @@ crontab -e
 ```bash
 systemctl restart crond
 ```
+
+如果是 ubuntu
+
+```bash
+systemctl restart cron
+```
