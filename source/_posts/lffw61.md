@@ -20,7 +20,7 @@ su root
 启动`wifite`
 
 ```bash
-sudo wifite
+wifite
 ```
 
 选择一个支持监听的网卡，如果不支持的话，淘宝 20 快可以搞到
@@ -67,4 +67,4 @@ aircrack-ng -w /usr/share/wordlists/rockyou.txt hs/handshake_2412016_58-41-20-91
 
 ## ![](images/FurkEHeFD8YPNa2MMjHLBn0e4AHn.png)
 
-虽然路由器会防止 PIN 攻击，但这种跑出来只是时间的问题。
+虽然路由器会防止 PIN 攻击，但这种跑出来基本只是时间问题（嗯，除非撞大运，否则没个几天跑不出来）
