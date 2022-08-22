@@ -28,5 +28,5 @@ jobs:
           uses: yrpang/github-actions-hexo@v1.3
           with:
             deploykey: ${{ secrets.SSH_KEY }}
-            username: beimengyeyu
-            email: me@beimengyeyu.com
+            username: ci-bot
+            email: bot@beimengyeyu.com
