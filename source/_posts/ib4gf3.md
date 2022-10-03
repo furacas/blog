@@ -1,7 +1,7 @@
 ---
 title: Ubuntu安装frp
 date: 2022-09-30T11:40:35.000Z
-tags: ['内网穿透','瞎折腾']
+tags: ['内网穿透','瞎折腾','ubuntu']
 ---
   
 ## 下载 frp
