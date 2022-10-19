@@ -123,7 +123,7 @@ sh run_admin.sh -e server.port=8089 \
 
 访问`http://localhost:8089/` 密码是 admin/123456
 
-![](images/FoVgBENfFuEfBdZSOsBBgULjFZvE.png)
+![](images/Ft9BVxnEG0PteERR0IVZN7TAOKvx.png)
 
 ### canal
 
@@ -155,7 +155,7 @@ sh run.sh -e canal.admin.manager=docker.for.mac.host.internal:8089 \
 canal 启动成功之后登陆 canal-admin 创建一个 example 的 instance 一会会用到
 一个 instance 对应一个 mysql 实例
 
-![](images/FtGs94S-JNRbZuX6aofxq2rcYibb.png)
+![](images/FstnSwKRouupPhu4u49PIiJJc3Kq.png)
 
 ### canal-adapter
 
@@ -310,4 +310,4 @@ GET product/_search
 ```
 
 查询结果，可以看到已经同步成功了
-![](images/Fs1ZPvGFFIfgLu7mt4mKlbPsx6Q3.png)
+![](images/FtXnkLCLdnaCETtfMlfOGUE9K-A0.png)
