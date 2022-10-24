@@ -11,9 +11,9 @@ category: OD 逆向系列
 ## 本文介绍
 
 本文使用**密码登录.exe**这个例子来介绍多种方式破解。这里例子的大致工作原理是在一个输入框中输入一个密码，如果错误会提示登录失败
-![](images/FkNiPjrIPxKXYnL-fcAuxUer52SH.png)
+![](images/FkxdbzfdsEEgjLAK3GTUv5EjRigi.png)
 如果输入正确的密码就会弹出一个新的窗口
-![](images/Flk6GatNX2LicbRgAYRjFA9X5B1y.png)
+![](images/Fj-C2rdBhdSUfH-NlR3uV9s-9Y_f.png)
 
 破解目标，让他弹出来登录成功的窗口
 
@@ -24,20 +24,20 @@ category: OD 逆向系列
 #### 1. 找到文件头
 
 使用 OD 打开例子，按下`Ctrl + G`进行搜索`00401000`（exe 程序的文件头）
-![](images/FqXqRNWPC99dgF9u8PS4qJSHE_-D.png)
+![](images/FiCrv6CopQGU0PE8kQc-EVHAdrbA.png)
 
 #### 2. 智能搜索
 
 可以搜索关键字，找到"登陆失败"这几个关键字
 右击，找到中文搜索引擎中的只能搜索。
-![](images/FsuijeQ1WJfPm_oY-s16CmkQrRgN.png)
+![](images/FkjxERu7s4fC9V-w71t4dewDgdxd.png)
 `Ctrl + F `搜索 "登陆失败" 找到位置
 
-可以很容易分析发现，是由于这个跳转导致的弹出登录失败的窗口![](images/FsHDUL5XAdSOSCGIaQRc2r3EuF12.png)
+可以很容易分析发现，是由于这个跳转导致的弹出登录失败的窗口![](images/FsZo5rE2zJiCQDR-TMFEbM44AiOR.png)
 那我们这里就可以简单的把这个跳转语句抹掉。点击这个语句，右击二进制，使用 nop 填充
-![](images/FtnBkmcElIh3an__GWwDdn-ZuQdx.png)
+![](images/FmPIIWkNY7M4RPMSVUiWC-QbG8vj.png)
 再次点击登录按钮可以看到登录成功的窗口弹出来了。
-![](images/FgK16Tl9e0W--Kp5EmpO3MD8nxoC.png)
+![](images/FgDA0gdLqFkNbqDY242azfaszYCt.png)
 
 ### 弹窗断点法
 
@@ -45,19 +45,19 @@ category: OD 逆向系列
 
 #### 1. 设置消息框断点
 
-![](images/FqfvhYwFVFwVf4XT0lHsGZPHuL5F.png)
+![](images/FvE6FwohvCDsZUOph5wS0F5jyZpT.png)
 
 #### 2. 运行程序，使其弹出消息框
 
 #### 3. 寻找调用过程
 
-点击![](images/FlC4g3jYlc_OuPTnuNDxGKhjJnJy.png)
-然后点击![](images/Fj9W6Pa_flQw4CrmxQOj756Neocd.png)
+点击![](images/FrhX5QvA5VyJw0JVZQ2T-nBhgYQn.png)
+然后点击![](images/FiA7wsoXiSuQRyFR04XHc-IqScH1.png)
 点击 k 查看调用栈
-![](images/FnSclC1ZMBwtzQsEr-S5iTtZJp3g.png)
+![](images/Fjuho3bdE82I-EJwfHdGMVY10XOK.png)
 右击第二个显示调用
 也可以找到这个位置
-![](images/FhLYYYtypjgmvH1MMyfQabDaHZ0i.png)
+![](images/Fi1Vn7hXtOxNlT1yDmkZpeSBPSxO.png)
 
 ### Push 大法
 
@@ -68,12 +68,12 @@ push 大法就是让他跳过登录窗口直接到达目标窗口
 #### 2. 找到窗口
 
 `Ctrl + F`搜索 `push 10001`。`push 10001`隔一条指令就是一个窗口，当然有些软件不止一个窗口，可以使用`Ctrl + L`搜索下一个，把这些窗口复制下来。
-![](images/Frg4lWgkGtOCfX0Wyq2naFQCio1n.png)
+![](images/Fu5jplh4AF6VF-NleD6OJrE_M-lB.png)
 
 #### 3. 进行替换
 
 输入`Ctrl + B`搜索`ff25`
-![](images/FvBngI1lVr0rWZLAEua92U3TNxLT.png)
+![](images/Flv_R-xi-9z6-baS3Mmbq1JX_wWh.png)
 可以看到在搜索结果的上面他 push 进去了一个窗口，现在我们把他修改成我们刚才找到的窗口。
 右键汇编 将`push 0x52010001`修改为 `push 0x5201000E`这个时候打开软件就直接跳出来登录成功了。
 有多个窗口的情况下需要挨个尝试，直到找到想要的窗口。
@@ -88,6 +88,6 @@ push 大法就是让他跳过登录窗口直接到达目标窗口
 
 使用 OD 修改之后可以立刻生效，但是下次打开程序就会失效了,这个时候我们需要把修改保存下来。
 右键 保存到可执行文件，所有修改
-![](images/FucEKvRAaFd_BJv0_2q_QYkt9Q7T.png)
+![](images/FrUWGxgf4JGwxndTTPX0LnY6_HsP.png)
 这个时候会出来这样一个框，右键保存到文件即可
-![](images/FvivEgOR_W_a4WCDCWln-QIoX8td.png)
+![](images/Fq9SfMaNB6hrKXC_NoRyAMEDnH1z.png)
