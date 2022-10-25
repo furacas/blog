@@ -8,13 +8,13 @@ tags: ['hexo']
 
 该主题最初版是 typeecho 主题[Brave](https://github.com/zwying0814/Brave)移植过来的，感谢原作者 🙏。
 
-## ![](images/FlXWZNK7zSC5FvEIJP81wHMABxFE.png)
+## ![](images/FkdiQyfriDOB2mXeMuI5Zhb6a_W7.png)
 
-## ![](images/FvNzXtQi027bEuwdttuHua6iC84y.png)
+## ![](images/FvnuMA5lVItIYOsJCXyZGzhsqYM9.png)
 
-## ![](images/FjHg7uIYkf6yLFGm_NreWlPUvhf3.png)
+## ![](images/FjWYEwap5VWM84ejmTfXGbcC0Fuc.png)
 
-## ![](images/Fswd6QSqSiZSz_07R5TaoY9ugfds.png)
+## ![](images/FnIf-vlf_P3gd3WgozMPoE8bpZtk.png)
 
 演示地址 [https://l.beimengyeyu.com/](https://l.beimengyeyu.com/)
 
