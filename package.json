@@ -42,7 +42,7 @@
   "yuqueConfig": {
     "login": "lmikoto",
     "repo": "blog",
-    "adapter": "sync/adapter.js",
+    "lastGeneratePath": "lastGeneratePath.log",
     "baseUrl": "https://www.yuque.com/api/v2",
     "postPath": "source/_posts",
     "mdNameFormat": "slug",
