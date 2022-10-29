@@ -19,9 +19,9 @@ bypy info
 ```
 
 访问出现的链接
-![](images/FoWNPi_0e8k49CPBb_YCExmnAYx6.png)
+![](images/FqOOYuArrRBs_wo7YTcc-uQ0lLLB.png)
 登陆之后，获取到授权码，输入授权码之后授权成功
-![](images/Fki5CdVsK7z1BPQZxO3ZAqoGyWmn.png)
+![](images/FliVqYNVZou2DerN-ZWcbUKqhGKX.png)
 
 ## 创建备份脚本
 
