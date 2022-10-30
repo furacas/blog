@@ -21,7 +21,7 @@ category: OD 逆向系列
 ## 常用逆向工具包
 
 这里准备一个逆向工具包，包括常用的工具 od、ce、exeinfope 等工具，具体可以看下面的截图
-![](images/FuaEzmF5DOkS-VPa4tKqnn1oXkFW.png)
+![](images/Ftx77XEEXTXrk5T2SmKsQXATUTZJ.png)
 
 ## 驱动 OD
 
