@@ -1,9 +1,13 @@
 ---
 title: canal同步mysql数据到es
-date: 2022-07-11T01:20:46.000Z
-tags: ['canal','es','java']
+urlname: lr0bf3
+date: '2022-07-11 09:20:46 +0800'
+tags: []
+categories: []
 ---
-  
+
+> canal、es、java
+
 ## 环境信息
 
 - docker
@@ -123,7 +127,7 @@ sh run_admin.sh -e server.port=8089 \
 
 访问`http://localhost:8089/` 密码是 admin/123456
 
-![](images/Fkkl9lLUBEA4wfNjfd00v559B5Y4.png)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/328252/1657502465374-00c08f5b-9878-4197-96dd-16a8786efad2.png#clientId=u11f7160b-67ee-4&crop=0&crop=0&crop=1&crop=1&id=TZRQa&name=image.png&originHeight=426&originWidth=794&originalType=binary∶=1&rotation=0&showTitle=false&size=17233&status=done&style=none&taskId=uc27a232e-5965-4077-9fb7-f231db839cb&title=)
 
 ### canal
 
@@ -155,7 +159,7 @@ sh run.sh -e canal.admin.manager=docker.for.mac.host.internal:8089 \
 canal 启动成功之后登陆 canal-admin 创建一个 example 的 instance 一会会用到
 一个 instance 对应一个 mysql 实例
 
-![](images/Fse9Mx24dg9v3vtxSvD5p4xkgcE_.png)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/328252/1657502466449-e864ada8-2f8d-468b-9d73-49592a0fb5e0.png#clientId=u11f7160b-67ee-4&crop=0&crop=0&crop=1&crop=1&id=wNGFa&name=image.png&originHeight=560&originWidth=3400&originalType=binary∶=1&rotation=0&showTitle=false&size=212564&status=done&style=none&taskId=ud38923b9-0add-4605-b4ec-2d2c1381a91&title=)
 
 ### canal-adapter
 
@@ -310,4 +314,4 @@ GET product/_search
 ```
 
 查询结果，可以看到已经同步成功了
-![](images/Fv2xssDbtJQESPDAtQDbclErMbEU.png)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/328252/1657502470764-b2bf0c17-7c91-4323-8a9a-aee6bd957259.png#clientId=u11f7160b-67ee-4&crop=0&crop=0&crop=1&crop=1&id=dpKjo&name=image.png&originHeight=1352&originWidth=2790&originalType=binary∶=1&rotation=0&showTitle=false&size=917190&status=done&style=none&taskId=u46610854-72e4-410e-a291-7ece5c6b28c&title=)

@@ -1,9 +1,13 @@
 ---
 title: 基于Antlr的计算器程序
-date: 2022-07-21T12:39:33.000Z
-tags: ['java','antlr']
+urlname: zxee2q
+date: '2022-07-21 20:39:33 +0800'
+tags: []
+categories: []
 ---
-  
+
+> java、antlr
+
 ## 定义语法
 
 `Calc.g4`
@@ -39,9 +43,9 @@ WS : [ \t]+ -> skip;
 使用插件或者 jar 根据语法生成代码。
 安装 idea 插件
 
-![](images/Fr0Mm27TDRjAUfmW6vEfipnKEsnV.png)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/328252/1658407198607-8f33787a-4b18-4407-b531-20547bdf9755.png#clientId=u0ad63c33-f01a-4&crop=0&crop=0&crop=1&crop=1&id=czV7V&name=image.png&originHeight=1440&originWidth=1788&originalType=binary∶=1&rotation=0&showTitle=false&size=736564&status=done&style=none&taskId=u1e3a9e50-8a7e-4c6c-9256-3f118333386&title=)
 生成词法分析和语法分析的代码
-![](images/Fp7KuhSs3zLjngsDLPdWY7Kkzzpc.png)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/328252/1658407198451-d28c762e-f7bc-4363-b7d8-a5e092368884.png#clientId=u0ad63c33-f01a-4&crop=0&crop=0&crop=1&crop=1&id=bdf0t&name=image.png&originHeight=706&originWidth=471&originalType=binary∶=1&rotation=0&showTitle=false&size=284344&status=done&style=none&taskId=u68f8aff7-ad3a-4652-bad0-cf1ac7a82f3&title=)
 
 ## 编写程序代码
 

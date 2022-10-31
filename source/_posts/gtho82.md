@@ -1,8 +1,11 @@
 ---
 title: 解决无线网卡偶尔搜不到wifi的问题（信道不统一）
-date: 2022-08-19T13:53:37.000Z
+urlname: gtho82
+date: '2022-08-19 21:53:37 +0800'
+tags: []
+categories: []
 ---
-  
+
 ## 背景
 
 家里一台笔记本电脑，还有一个无线网卡偶尔搜不到 wifi，不是必现，但是 mac 电脑还有一些物联网设备，手机从来没有出现这个问题。
@@ -16,10 +19,10 @@ date: 2022-08-19T13:53:37.000Z
 网上找了一下关键字，说是可能两台设备的信道范围不同。
 
 看了一下 Wi-Fi 的信道，设置是自动的范围是 5-13
-![](images/Fru8tZHtJ-4dUHBKv9KzICRYOtx3.png)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/328252/1660917945098-6a4132c0-4766-4a75-a3b1-9f887de98286.png#clientId=ubb916786-a7e5-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=318&id=ue8bdd9eb&margin=%5Bobject%20Object%5D&name=image.png&originHeight=636&originWidth=1252&originalType=binary∶=1&rotation=0&showTitle=false&size=70925&status=done&style=none&taskId=ub7e5d93f-b4e1-4a69-b0b8-b24249e936b&title=&width=626)
 
 在看了一下网卡的信道发现范围是 1-11
-![](images/Fq7SK7QWa91OsIngyR3kGz4t8dwA.png)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/328252/1660918127078-bf52dba7-e966-4627-96e4-231014c08d08.png#clientId=u691e9047-7726-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=413&id=uf1e521e6&margin=%5Bobject%20Object%5D&name=image.png&originHeight=413&originWidth=446&originalType=binary∶=1&rotation=0&showTitle=false&size=16752&status=done&style=none&taskId=u052c1d55-3d42-4310-8913-70e0c3b3653&title=&width=446)
 所以 12，13 两个信道的信号可能就接受不到，这也和偶发的场景对上了，调整网卡的信道配置
-![](images/Fndw7W3g5EAsjXTUReGAsSLOFAc-.png)
+![image.png](https://cdn.nlark.com/yuque/0/2022/png/328252/1660918196794-4beeb843-fba0-4f3b-862b-3ac81bc4a2a9.png#clientId=u691e9047-7726-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=75&id=udce1dfdc&margin=%5Bobject%20Object%5D&name=image.png&originHeight=75&originWidth=198&originalType=binary∶=1&rotation=0&showTitle=false&size=1547&status=done&style=none&taskId=u758b6d51-7db4-4899-b8af-e3cc031a9d9&title=&width=198)
 问题解决
