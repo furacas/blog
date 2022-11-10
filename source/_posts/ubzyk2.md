@@ -14,7 +14,7 @@ vim /usr/lib/systemd/system/docker.service
 ```
 
 ExecStart 属性添加参数 -H tcp://0.0.0.0:2375
-![](images/FgHDyq0El7YAmVyBSVjNpDnri6QP.png)
+![](images/1661652340332-5fdde1fb-96d4-4b96-99db-48d0a418533d.png)
 加载 docker 守护进程
 重启 docker
 

@@ -6,7 +6,7 @@ tags: ['poi','java']
   
 ## 问题背景
 
-在 word 中有两种换行，一种是直接按下回车的"段落换行"![](images/FidBxdQ1iYL7V1OJNa9Hx3NIa8iE.png)而另一种换行符是按下 shift + 回车打出来的换行符 ![](images/FuLrPQj_RyvO0dwGitDS9CBu0CBT.png)
+在 word 中有两种换行，一种是直接按下回车的"段落换行"![](images/1667556405124-28604506-8839-4231-8038-fd17fc9e1802.png)而另一种换行符是按下 shift + 回车打出来的换行符 ![](images/1667556470690-9489e920-0b49-4c04-8984-f0e11a0b40f4.png)
 
 ```
 ## 第一种换行符

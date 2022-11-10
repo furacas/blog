@@ -53,6 +53,7 @@ const imageDirName = 'source/images'
  * @return {Promise<Buffer>} 文件buffer
  */
  async function img2Buffer(yuqueImgUrl) {
+  out.info(`download image ${yuqueImgUrl}`)
   return await new Promise(async function(resolve) {
     try {
       await superagent
@@ -90,39 +91,36 @@ const imageDirName = 'source/images'
   const promiseList = matchYuqueImgUrlList.map(async matchYuqueImgUrl => {
     // 获取真正的图片url
     const yuqueImgUrl = getImgUrl(matchYuqueImgUrl);
-    // 2。将图片转成buffer
-    const imgBuffer = await img2Buffer(yuqueImgUrl);
-    if (!imgBuffer) {
-      return {
-        originalUrl: matchYuqueImgUrl,
-        yuqueRealImgUrl: yuqueImgUrl,
-        url: yuqueImgUrl,
-      };
-    }
-    // 3。根据buffer文件生成唯一的hash文件名
-    const fileName = await getFileName(imgBuffer, yuqueImgUrl);
 
-    try {
-      if(!fs.existsSync(imageDirName)){
-        fs.mkdirSync(imageDirName)
+    if(!fs.existsSync(imageDirName)){
+      fs.mkdirSync(imageDirName)
+    }
+    const fileName = yuqueImgUrl.substring(yuqueImgUrl.lastIndexOf('/') + 1)
+
+    if(!fs.existsSync(`${imageDirName}/${fileName}`)){
+      const imgBuffer = await img2Buffer(yuqueImgUrl);
+      if (!imgBuffer) {
+        return {
+          originalUrl: matchYuqueImgUrl,
+          yuqueRealImgUrl: yuqueImgUrl,
+          url: yuqueImgUrl,
+        };
       }
-
+  
       fs.writeFileSync(`${imageDirName}/${fileName}`,imgBuffer)
-      return {
-        originalUrl: matchYuqueImgUrl,
-        yuqueRealImgUrl: yuqueImgUrl,
-        url: `images/${fileName}`,
-      };
-    } catch (e) {
-      out.error(`访问图床出错，请检查配置: ${e}`);
-      process.exit(-1);
     }
+
+
+    return {
+      originalUrl: matchYuqueImgUrl,
+      yuqueRealImgUrl: yuqueImgUrl,
+      url: `images/${fileName}`,
+    };
   });
   const urlList = await Promise.all(promiseList);
   urlList.forEach(function(url) {
     if (url) {
       article.body = article.body.replace(url.originalUrl, `![](${url.url})`);
-      out.info(`replace ${url.yuqueRealImgUrl} to ${url.url}`);
     }
   });
   return article;
