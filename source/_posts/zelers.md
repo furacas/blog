@@ -1,13 +1,9 @@
 ---
 title: Github Action 不同Job共享数据
-urlname: zelers
-date: '2022-06-21 10:10:40 +0800'
-tags: []
-categories: []
+date: 2022-06-21T02:10:40.000Z
+tags: ['工具','Github Action']
 ---
-
-> 工具、Github Action
-
+  
 ## 背景
 
 一个.net framwork 项目需要 windows 环境进行构建，构建完之后依赖一些其他的 action 进行一些后续的操作，但这些 action 其中一些不支持 windows 环境。

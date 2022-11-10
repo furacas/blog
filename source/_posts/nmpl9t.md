@@ -1,14 +1,10 @@
 ---
 title: OD逆向系列2-常用的汇编指令
-urlname: nmpl9t
-date: '2022-07-13 19:40:36 +0800'
-tags: []
-categories: []
+date: 2022-07-13T11:40:36.000Z
+tags: ['逆向','OD','汇编']
+category: OD 逆向系列
 ---
-
-> 逆向、OD、汇编
-> OD 逆向系列
-
+  
 这些指令不需要死记，用的时候查表知道是干什么的就可以了。
 
 | **指令** | **作用**                  |
@@ -27,4 +23,4 @@ categories: []
 | pop xxx  | xxx 出栈                  |
 | push xxx | xxx 压栈                  |
 
-如果想了解更详细可以参考一下[逆向汇编基础 ](https://www.beimengyeyu.com/2022/kq0iqk/)
+如果想了解更详细可以参考一下[逆向汇编基础 ](https://www.beimeng.org/2022/kq0iqk/)

@@ -1,16 +1,12 @@
 ---
 title: 解决poi插入的换行符无法被复制的问题
-urlname: cddgaa
-date: '2022-11-04 18:03:34 +0800'
-tags: []
-categories: []
+date: 2022-11-04T10:03:34.000Z
+tags: ['poi','java']
 ---
-
-> poi、java
-
+  
 ## 问题背景
 
-在 word 中有两种换行，一种是直接按下回车的"段落换行"![image.png](https://cdn.nlark.com/yuque/0/2022/png/328252/1667556405124-28604506-8839-4231-8038-fd17fc9e1802.png#averageHue=%23ffffff&clientId=u996beacd-d6b1-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=13&id=u0a5a81d8&margin=%5Bobject%20Object%5D&name=image.png&originHeight=25&originWidth=34&originalType=binary∶=1&rotation=0&showTitle=false&size=771&status=done&style=none&taskId=uf8e6c067-733c-49c9-8828-ae86b625935&title=&width=17)而另一种换行符是按下 shift + 回车打出来的换行符 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/328252/1667556470690-9489e920-0b49-4c04-8984-f0e11a0b40f4.png#averageHue=%23ffffff&clientId=u996beacd-d6b1-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=12&id=u0f8fae03&margin=%5Bobject%20Object%5D&name=image.png&originHeight=24&originWidth=24&originalType=binary∶=1&rotation=0&showTitle=false&size=696&status=done&style=none&taskId=u8f5e30fd-6ac8-4d52-bfde-df45a6f3179&title=&width=12)
+在 word 中有两种换行，一种是直接按下回车的"段落换行"![](images/FrD6zUk5-RG2ge7mKToa-DIrun5j.png)而另一种换行符是按下 shift + 回车打出来的换行符 ![](images/FhTD7gKiy-spK067FOIRroQmByUz.png)
 
 ```
 ## 第一种换行符

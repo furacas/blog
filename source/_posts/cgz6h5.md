@@ -1,13 +1,9 @@
 ---
 title: Windows 搜不到wifi解决
-urlname: cgz6h5
-date: '2022-06-26 22:23:55 +0800'
-tags: []
-categories: []
+date: 2022-06-26T14:23:55.000Z
+tags: ['Windows']
 ---
-
-> Windows
-
+  
 我是用 mac 的，最近在折腾一些跟`.net framwork`相关的东西，一直远程也不太方便就用`Boot Camp`装了个了个 Windows，刚开始用多个好好的，直到因为一些问题我手贱点了重置网络。然后系统就搜不到 wifi 了。
 
 ## 驱动问题？

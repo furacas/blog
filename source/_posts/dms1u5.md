@@ -1,13 +1,9 @@
 ---
 title: KMP算法
-urlname: dms1u5
-date: '2022-07-17 21:26:26 +0800'
-tags: []
-categories: []
+date: 2022-07-17T13:26:26.000Z
+tags: ['算法']
 ---
-
-> 算法
-
+  
 KMP 是一种**字符串的模式匹配**算法，可以在最多只遍历一遍主串的情况下，实现两个字符串的匹配。时间复杂度 O(m+n)
 
 ## 字符串匹配问题
@@ -45,14 +41,14 @@ int Index(string S,string T)
 在上述算法中，分别用计数指针 i，j 指示主串 S 和模式串 T 中当前正在比较字符的位置。从主串 S 的第一个字符开始，与模式串的第一个字符进行比较，若相等，则继续逐个比较后序的字符，否则从主串的下一个字符起，重新和模式串的字符进行比较，以此类推，直到模式串 T 中的每个字符依次和主串中的一个连续的字符序列相等，则匹配成功。否则匹配不成功。
 这种暴力尝试的最坏时间复杂度是 O(n\*m)其中 n 和 m 是主串和模式串的长度。
 演示动画如下
-![暴力方法.gif](https://cdn.nlark.com/yuque/0/2022/gif/328252/1658210166228-3e3ecdd0-9c57-40d6-b450-7179c225f9fb.gif#clientId=uc5a110f1-7f65-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=uca87386d&margin=%5Bobject%20Object%5D&name=%E6%9A%B4%E5%8A%9B%E6%96%B9%E6%B3%95.gif&originHeight=608&originWidth=1080&originalType=binary∶=1&rotation=0&showTitle=false&size=98160&status=done&style=none&taskId=u65519c5f-2c24-484a-a0de-2172610ab91&title=)
+![](images/FiW7X_tQNQs_Wf73QvxBUrXlshJu.gif)
 
 ## KMP 算法
 
 在上述动画演示中，第三趟匹配中 i=6，j=4 的字符比较不想等，于是又从 i=3，j=0 重新开始比较，然而仔细观察一下就会发现，i=3，j=0、i=4，j=0、i=5，j=0 这三次比较都是不必进行的，因为在第三趟的部分匹配结果上我们就已经知道了主串的第 3、4、5 的字符是 b、c、a。而模式串的第一个字符是 a 我们也是知道的，所以 3、4 两个位置可以直接跳过，因为一定不符合，而 5 的位置不需要比较，因为一定符合，所以可以直接进心 i=6、j=1 的比较。
 
 我们利用一下这个思想改良一下上述算法。动画演示如下
-![KMP.gif](https://cdn.nlark.com/yuque/0/2022/gif/328252/1658230736727-8327b1bc-f35a-414f-8c9a-ba7048859050.gif#clientId=uc5a110f1-7f65-4&crop=0&crop=0&crop=1&crop=1&from=paste&id=u982382d6&margin=%5Bobject%20Object%5D&name=KMP.gif&originHeight=608&originWidth=1080&originalType=binary∶=1&rotation=0&showTitle=false&size=62500&status=done&style=none&taskId=ue2a8b3de-5f77-4f44-b4ae-b9db9ec2370&title=)
+![](images/FqO7WNl3RqpJIbXWXwQ9biXLQNIS.gif)
 用代码实现一下
 
 ```cpp

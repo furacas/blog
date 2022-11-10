@@ -1,13 +1,9 @@
 ---
 title: Ubuntu安装frp
-urlname: ib4gf3
-date: '2022-09-30 19:40:35 +0800'
-tags: []
-categories: []
+date: 2022-09-30T11:40:35.000Z
+tags: ['内网穿透','瞎折腾','ubuntu']
 ---
-
-> 内网穿透、瞎折腾、ubuntu
-
+  
 ## 下载 frp
 
 ```bash
