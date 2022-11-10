@@ -39,9 +39,9 @@ WS : [ \t]+ -> skip;
 使用插件或者 jar 根据语法生成代码。
 安装 idea 插件
 
-![](images/Fj6_JF3xO2Gl6Hc29PumlbCHLKO6.png)
+![](images/FqBglEs1ICjhzoQtmB0o_8bsREFx.png)
 生成词法分析和语法分析的代码
-![](images/FtinzwbmvhD8CkQ0GyboyVGlPWeK.png)
+![](images/FjV3HrJAQutUjgtVszlE6tnjO7_u.png)
 
 ## 编写程序代码
 
