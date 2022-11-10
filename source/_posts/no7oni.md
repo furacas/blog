@@ -1,13 +1,9 @@
 ---
 title: Nginx反向代理https忽略证书错误
-urlname: no7oni
-date: '2022-10-02 06:32:24 +0800'
-tags: []
-categories: []
+date: 2022-10-01T22:32:24.000Z
+tags: ['nginx']
 ---
-
-> nginx
-
+  
 因为有需求吧 esxi 暴露到公网上，内网穿透之后，然后反向代理到对应的域名上。这个时候一直 502 错误。因为 esxi 那边暴露的是 443 端口，而证书刚好无效。
 
 ```nginx

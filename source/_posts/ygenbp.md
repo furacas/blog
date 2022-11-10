@@ -1,13 +1,9 @@
 ---
 title: MyBatis缓存机制
-urlname: ygenbp
-date: '2022-09-21 21:43:57 +0800'
-tags: []
-categories: []
+date: 2022-09-21T13:43:57.000Z
+tags: ['MyBatis','java']
 ---
-
-> MyBatis、java
-
+  
 正如大多数持久层框架一样，MyBatis 同样提供了一级缓存和二级缓存的支持。
 
 MyBatis 的缓存分为一级缓存和二级缓存，两种缓存的缓存粒度是一样的，都是对应一条 sql 查询语句，但是二者的生命周期是不一样的，一级缓存的生命周期是 SqlSession 对象的使用期间，随着 SqlSession 对象的死亡而消失；二级缓存如果没有更新数据的话，最长可以和应用的生命周期一样长。

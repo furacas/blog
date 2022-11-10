@@ -1,14 +1,10 @@
 ---
 title: OD逆向系列1-搭建环境
-urlname: xbhk7s
-date: '2022-07-11 22:24:43 +0800'
-tags: []
-categories: []
+date: 2022-07-11T14:24:43.000Z
+tags: ['逆向','OD']
+category: OD 逆向系列
 ---
-
-> 逆向、OD
-> OD 逆向系列
-
+  
 # 软件
 
 本文所有的涉及到的软件可以关注公众号**全栈编程笔记**回复**OD 逆向工具包**进行下载
@@ -25,7 +21,7 @@ categories: []
 ## 常用逆向工具包
 
 这里准备一个逆向工具包，包括常用的工具 od、ce、exeinfope 等工具，具体可以看下面的截图
-![捕获.PNG](https://cdn.nlark.com/yuque/0/2022/png/328252/1657712824715-1f511723-b17b-4b9a-ba98-f250e59b660c.png#clientId=u5cdb08e3-a18b-4&crop=0&crop=0&crop=1&crop=1&from=drop&id=ud354a858&margin=%5Bobject%20Object%5D&name=%E6%8D%95%E8%8E%B7.PNG&originHeight=442&originWidth=543&originalType=binary∶=1&rotation=0&showTitle=false&size=21362&status=done&style=none&taskId=u930209b4-7cb3-48a4-8a03-bb0933955f3&title=)
+![](images/FuEaeFgiGjHM84-DAAcNRRC53pkz.png)
 
 ## 驱动 OD
 
