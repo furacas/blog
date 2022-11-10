@@ -45,7 +45,8 @@
     "baseUrl": "https://www.yuque.com/api/v2",
     "postPath": "source/_posts",
     "mdNameFormat": "slug",
-    "onlyPublished": true
+    "onlyPublished": true,
+    "adapter": "sync/adapter.js"
   },
   "devDependencies": {
     "patch-package": "^6.4.7"
