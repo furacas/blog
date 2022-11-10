@@ -16,10 +16,10 @@ date: 2022-08-19T13:53:37.000Z
 网上找了一下关键字，说是可能两台设备的信道范围不同。
 
 看了一下 Wi-Fi 的信道，设置是自动的范围是 5-13
-![](images/Ftloixaw97LrKAJVrhlOVzZKS5jf.png)
+![](images/Fk3xjHQqOqGAIpMFB4THFAT3ymYt.png)
 
 在看了一下网卡的信道发现范围是 1-11
-![](images/FlmLHxoDXSxA92_nUhZaaEgCTM3k.png)
+![](images/FoSyfXWoY4oep-xbskHA39jPJ0As.png)
 所以 12，13 两个信道的信号可能就接受不到，这也和偶发的场景对上了，调整网卡的信道配置
-![](images/Fj6yeDAexqQABqvgxMooZBFjGkKI.png)
+![](images/FuGuS7gp00HBfZk4cE8GFPvaTMmI.png)
 问题解决
