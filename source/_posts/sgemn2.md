@@ -18,12 +18,12 @@ PE 工具，这里我使用的是[微 PE](https://www.wepe.com.cn/download.html)
 
 1. 把 Ventory 安装到 U 盘中
 
-![](images/FuI2PBWXJJ8bArRL-nGQ9bEypdGe.png)
-![](images/FrK3oIwA7ls2t7chUopNhCpWZBVr.png)
+![](images/1664367921005-710672fe-4df3-41ec-acb6-04b7be723791.png)
+![](images/1664368346556-6c4ec54d-a655-4586-aec7-aec1a4de9694.png)
 
 2. 使用微 PE 制作 iso 镜像
 
-![](images/FhK_DZDAjIbiD6FYZkRqkEI4v8Vg.png)
+![](images/1664537354599-da0c8f29-d3e3-4aec-ba66-dc945703cffe.png)
 
 3. 将制作好的的 PE 以及 ESXI 的 iso 文件复制到 U 盘中
 
