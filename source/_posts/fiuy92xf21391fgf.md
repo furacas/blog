@@ -1,9 +1,11 @@
 ---
-title: Java字符串replaceAll忽略全半角和大小写
+title: Java字符串split、replaceAll忽略全半角和大小写
 date: 2022-11-25T05:07:31.000Z
 tags: ['Java']
 ---
   
+## replaceAll
+
 忽略大小写很简，使用正则就可以实现
 
 ```java
@@ -23,5 +25,29 @@ public static String replaceAllIgnoreHalfFull(String source, String toReplace, S
         idx += replacement.length();
     }
     return sbSource.toString();
+}
+```
+
+## split
+
+原理和上面一样
+
+```java
+public static List<String> split(String source,String separator){
+    StringBuilder sbSourceHalf = new StringBuilder(StringUtils.fullToHalf(source));
+    String separatorStr = StringUtils.fullToHalf(separator);
+    int len = separatorStr.length();
+    int idx = 0;
+    int termStart = 0;
+    List<String> ret = new ArrayList<>();
+    while((idx = sbSourceHalf.indexOf(separatorStr, idx)) != -1) {
+        String term = source.substring(termStart,idx);
+        ret.add(term);
+        idx +=  separatorStr.length();
+        termStart = idx;
+    }
+
+    ret.add(source.substring(termStart));
+    return ret;
 }
 ```
