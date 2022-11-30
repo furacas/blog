@@ -1,7 +1,7 @@
 ---
 title: MyBatis缓存机制
 date: 2022-09-21T13:43:57.000Z
-tags: ['MyBatis','java']
+tags: ['MyBatis','Java']
 ---
   
 正如大多数持久层框架一样，MyBatis 同样提供了一级缓存和二级缓存的支持。
