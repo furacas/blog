@@ -1,6 +1,7 @@
 ---
 title: Ubuntu20.04修改静态ip
 date: 2022-10-02T13:46:24.000Z
+updated: 2022-10-02T13:59:30.000Z
 tags: ['瞎折腾','ubuntu']
 ---
   

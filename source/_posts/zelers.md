@@ -1,6 +1,7 @@
 ---
 title: Github Action 不同Job共享数据
 date: 2022-06-21T02:10:40.000Z
+updated: 2022-11-10T02:07:20.000Z
 tags: ['工具','Github Action']
 ---
   

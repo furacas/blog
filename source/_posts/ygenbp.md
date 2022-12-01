@@ -1,6 +1,7 @@
 ---
 title: MyBatis缓存机制
 date: 2022-09-21T13:43:57.000Z
+updated: 2022-11-25T05:13:25.000Z
 tags: ['MyBatis','Java']
 ---
   

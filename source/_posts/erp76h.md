@@ -1,6 +1,7 @@
 ---
 title: 情侣风格的Hexo主题Brave
 date: 2022-08-03T11:43:39.000Z
+updated: 2022-08-04T23:46:25.000Z
 tags: ['hexo']
 ---
   

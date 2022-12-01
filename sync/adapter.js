@@ -136,7 +136,7 @@ const imageDirName = 'source/images'
 module.exports = async function(post) {
   // 语雀img下载
   post = await imgDownload(post);
-  const { body,title,created_at } = post;
+  const { body,title,created_at,updated_at } = post;
   let raw = formatRaw(body);
   let tagsLine = raw.trim().split('\n')[0]
   let categoriesLine = raw.trim().split('\n')[1]
@@ -154,7 +154,7 @@ module.exports = async function(post) {
 
   const quoteTag = tags.map(t=>`'${t}'`);
 
-  let result =  `---\ntitle: ${title}\ndate: ${created_at}\n`;
+  let result =  `---\ntitle: ${title}\ndate: ${created_at}\nupdated: ${updated_at}\n`;
   if(tags.length != 0){
       result += `tags: [${quoteTag}]\n`
   }

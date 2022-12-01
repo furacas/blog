@@ -1,6 +1,7 @@
 ---
 title: 基于code-server搭建自己的开发环境
 date: 2022-08-18T03:18:11.000Z
+updated: 2022-11-09T07:54:40.000Z
 tags: ['code-server','瞎折腾','Github Action']
 ---
   

@@ -1,6 +1,7 @@
 ---
 title: Nginx反向代理https忽略证书错误
 date: 2022-10-01T22:32:24.000Z
+updated: 2022-10-01T22:36:05.000Z
 tags: ['nginx']
 ---
   
