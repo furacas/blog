@@ -37,7 +37,7 @@
     "hexo-theme-landscape": "^0.0.3",
     "request": "^2.88.2",
     "xml-parser": "^1.2.1",
-    "yuque-hexo": "^1.9.5"
+    "yuque-hexo": "^1.9.1"
   },
   "yuqueConfig": {
     "login": "lmikoto",

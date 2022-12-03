@@ -1,7 +1,7 @@
 ---
 title: canal同步mysql数据到es
 date: 2022-07-11T01:20:46.000Z
-updated: 2022-11-25T05:13:12.000Z
+updated: 2022-12-03T15:02:28.000Z
 tags: ['canal','es','Java']
 ---
   
