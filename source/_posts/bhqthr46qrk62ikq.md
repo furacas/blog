@@ -1,9 +1,9 @@
 ---
 title: 常用python3刷题语法
 date: 2022-11-29T13:21:23.000Z
-updated: 2022-12-05T05:18:56.000Z
+updated: 2022-12-05T05:38:26.000Z
 tags: ['算法','python']
-cover: images/1670217483169-0a928fa3-1ff7-4b25-9f3c-fd547ac6b4b2.png
+cover: images/1670218701943-f4ca2958-08c9-4592-8025-dc4404179ba4.png
 ---
   
 因为主编程语言不是 python，很多语法容易忘，特意记录一下。
