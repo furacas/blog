@@ -1,7 +1,7 @@
 ---
 title: 常用python3刷题语法
 date: 2022-11-29T13:21:23.000Z
-updated: 2022-12-05T05:38:26.000Z
+updated: 2022-12-05T14:50:21.000Z
 tags: ['算法','python']
 cover: images/1670218701943-f4ca2958-08c9-4592-8025-dc4404179ba4.png
 ---
@@ -78,6 +78,25 @@ a = ord('a')
 ### 切片
 
 同数组
+
+### 字符串是否是数字
+
+```python
+str.isdigit()
+```
+
+### 字符串是否是由数字和字母组成
+
+```python
+str.isalnum()
+```
+
+### 转大小写
+
+```python
+str.lower()
+str.upper()
+```
 
 ## collections
 
