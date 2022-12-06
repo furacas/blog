@@ -5,10 +5,11 @@ type: "link"
 comments: false
 ---
 
-
 ---
+
 ## 欢迎交换友链
-您可以发送友链信息到我的邮箱 me@beimengyeyu.com
+
+您可以发送友链信息到我的邮箱 beimengyeyu@outlook.com
 我的友链信息
 
 ```
