@@ -1,7 +1,7 @@
 ---
 title: 常用python3刷题语法
 date: 2022-11-29T13:21:23.000Z
-updated: 2022-12-05T14:50:21.000Z
+updated: 2023-01-12T03:24:04.000Z
 tags: ['算法','python']
 cover: images/1670218701943-f4ca2958-08c9-4592-8025-dc4404179ba4.png
 ---
@@ -33,6 +33,16 @@ for i in range(0, 10):
     pass
 # 这里输出的是9，并不等价于类c语言里面的 for(i = 0;i < 10; i++)
 print(i)
+```
+
+### enumerate
+
+返回的元组第一个参数是 index
+
+```
+s = "abcd"
+for i,c in enumerate(s):
+
 ```
 
 ## 数组
