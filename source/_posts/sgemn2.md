@@ -2,9 +2,9 @@
 title: N5105安装ESXi
 date: 2022-09-28T11:59:43.000Z
 updated: 2022-12-03T14:58:14.000Z
-tags: ["软路由", "瞎折腾", "N5105"]
+tags: ['软路由','瞎折腾','N5105']
 ---
-
+  
 ## 软件准备
 
 [Ventoy ](https://www.ventoy.net/cn/)
@@ -12,9 +12,8 @@ PE 工具，这里我使用的是[微 PE](https://www.wepe.com.cn/download.html)
 带网卡驱动的 ESXI iso 文件
 
 我打包了需要的软件，懒得找的可以直接用我的。
-链接: https://pan.baidu.com/s/1gVDim_HCys09S_OKqrEbnw
-
-提取码: 24n6
+链接：[https://pan.baidu.com/s/1hHHfWzF_yR6zN8UhbG9S2g?pwd=p2bd](https://pan.baidu.com/s/1hHHfWzF_yR6zN8UhbG9S2g?pwd=p2bd)
+提取码：p2bd
 
 ## 刻录 U 盘
 
