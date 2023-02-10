@@ -4,20 +4,11 @@ date: 2022-08-03T11:43:39.000Z
 updated: 2022-08-04T23:46:25.000Z
 tags: ['hexo']
 ---
-  
 ## 主题介绍
 
 该主题最初版是 typeecho 主题[Brave](https://github.com/zwying0814/Brave)移植过来的，感谢原作者 🙏。
 
-## ![](images/1659618511529-ff225dca-b16f-4c0d-9aff-d6084dcb826a.png)
-
-## ![](images/1659618537058-0262f678-fb14-4237-8631-9a81b044cf2e.png)
-
-## ![](images/1659618544667-2dca909a-dd73-40ac-a63d-baa1c208cb3f.png)
-
-## ![](images/1659618549623-30772653-45c2-4396-84d6-e9b50ccd1c1e.png)
-
-演示地址 [https://l.beimengyeyu.com/](https://l.beimengyeyu.com/)
+演示地址 [https://hexo-brave.furacas.com/](https://hexo-brave.furacas.com/)
 
 ## 主题安装
 
@@ -29,7 +20,7 @@ npm i hexo-theme-brave
 
 ### 选择主题
 
-修改`_config.yml`
+修改 `_config.yml`
 
 ```
 theme: brave
@@ -41,13 +32,13 @@ theme: brave
 
 ### 修改配置文件
 
-新建`_config.brave.yml`文件
-复制默认的[配置文件](https://github.com/beimengyeyu/hexo-theme-brave/blob/master/_config.yml)的内容到到刚才新建的文件中
+新建 `_config.brave.yml`文件
+复制默认的[配置文件](https://github.com/furacas/hexo-theme-brave/blob/master/_config.yml)的内容到到刚才新建的文件中
 修改这些配置为您的配置
 
 | 配置项          | 说明                   | 默认值                       |
 | --------------- | ---------------------- | ---------------------------- |
-| lovebegin       | 恋爱开始时间           | 2017-07-27   ｜              |
+| lovebegin       | 恋爱开始时间           | 2017-07-27   ｜             |
 | banner          | 页面大图的图片地址     | /img/banner.jpg              |
 | leftname        | 左侧情侣头像的名称     | boyname                      |
 | leftavatar      | 左侧情侣头像的图片地址 | /img/boyavatar.jpg           |

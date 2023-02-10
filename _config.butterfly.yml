@@ -35,8 +35,8 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-github: https://github.com/beimengyeyu || Github
-  fas fa-envelope: mailto:me@beimengyeyu.com || Email
+  fab fa-github: https://github.com/furacas || Github
+  fas fa-envelope: mailto:s.furacas@outlook.com || Email
   fa-solid fa-rss: /atom.xml || RSS
   
 
@@ -294,14 +294,7 @@ disqusjs:
 livere:
   uid:
 
-# npm i patch-package --save-dev
-# https://github.com/gitalk/gitalk
-gitalk:
-  client_id: d57099a94c1eb289a24b
-  client_secret: 1eb28b8b9a9e3e36cd3f4d6cf5133aab72e81ec6
-  repo: beimengyeyu.github.io
-  owner: beimengyeyu
-  admin: beimengyeyu
+
 
 # valine
 # https://valine.js.org
@@ -645,7 +638,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/beimengyeyu
+      link: https://github.com/furacas
   card_announcement:
     enable: false
     content: This is my Blog

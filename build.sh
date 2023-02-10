@@ -6,9 +6,9 @@ npm run build
 # npm run talk
 if [ -n "$(git status -s)" ];then
     git add .
-    git config --global user.name "beimengyeyu"
-    git config --global user.email "me@beimengyeyu.com"
+    git config --global user.name "furacas"
+    git config --global user.email "gh@yeyu.im"
     git commit -m "update cache"
-    git push https://${GITHUB_TOKEN}@github.com/beimengyeyu/blog.git -f
+    git push https://${GITHUB_TOKEN}@github.com/furacas/blog.git -f
 fi
  

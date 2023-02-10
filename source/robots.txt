@@ -4,4 +4,4 @@ Allow: /archives/
 Allow: /categories/
 Allow: /tags/
 Allow: /about/
-Sitemap: https://www.beimengyeyu.com/sitemap.xml
+Sitemap: https://www.furacas.com/sitemap.xml

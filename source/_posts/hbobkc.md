@@ -4,7 +4,6 @@ date: 2022-08-18T03:18:11.000Z
 updated: 2022-11-09T07:54:40.000Z
 tags: ['code-server','瞎折腾','Github Action']
 ---
-  
 ## 背景
 
 平时用的设备不同，win、mac、linux 都用，想统一一下开发环境。而刚好看到 coder-server 这个开源的 WebIDE，这样把 code-server 部署到服务器上，每个环境只要又个浏览器就可以共享部署在服务器上的环境。
@@ -23,8 +22,8 @@ FROM codercom/code-server:latest
 ```dockerfile
 # git config
 RUN git config --global --add pull.rebase false \
-    && git config --global --add user.name beimengyeyu \
-    && git config --global --add user.email me@beimengyeyu.com \
+    && git config --global --add user.name furacas \
+    && git config --global --add user.email s.furacas@outlook.com \
     && git config --global core.editor vim \
     && git config --global init.defaultBranch master
 ```
