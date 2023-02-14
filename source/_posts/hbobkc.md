@@ -1,9 +1,10 @@
 ---
 title: 基于code-server搭建自己的开发环境
 date: 2022-08-18T03:18:11.000Z
-updated: 2022-11-09T07:54:40.000Z
+updated: 2023-02-10T15:35:59.000Z
 tags: ['code-server','瞎折腾','Github Action']
 ---
+  
 ## 背景
 
 平时用的设备不同，win、mac、linux 都用，想统一一下开发环境。而刚好看到 coder-server 这个开源的 WebIDE，这样把 code-server 部署到服务器上，每个环境只要又个浏览器就可以共享部署在服务器上的环境。
@@ -11,7 +12,7 @@ tags: ['code-server','瞎折腾','Github Action']
 ## 定制过程
 
 定制一个带有 code-server 的镜像，既包含 code-server 又包含自己想要的工具。
-下面列出主要过程，完整版可以直接看[这个文件](https://github.com/beimengyeyu/my-code-server/blob/main/Dockerfile)
+下面列出主要过程，完整版可以直接看[这个文件](https://github.com/furacas/my-code-server/blob/main/Dockerfile)
 
 ```dockerfile
 FROM codercom/code-server:latest
@@ -94,7 +95,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: beimengyeyu/code-server:latest
+          tags: furacas/code-server:latest
 ```
 
 ## 账号配置
