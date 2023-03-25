@@ -36,7 +36,7 @@ jobs:
               npm run build
               deploy=1
           fi
-          echo "::set-output name=deploy::$deploy"
+          echo "deploy=$deploy" >> $GITHUB_OUTPUT
       - name: deploy
         if: ${{ steps.build.outputs.deploy == '1' }}
         uses: yrpang/github-actions-hexo@v1.3
