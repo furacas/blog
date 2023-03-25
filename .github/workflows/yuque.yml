@@ -25,7 +25,7 @@ jobs:
         run: |
           npm install
           npm run sync
-          result=0
+          deploy=0
           if [ -n "$(git status -s)" ];then
               git add .
               git config --global user.name "furacas"
@@ -34,14 +34,11 @@ jobs:
               git push https://${GITHUB_TOKEN}@github.com/furacas/blog.git -f
               # build blog
               npm run build
-              result=1
+              deploy=1
           fi
-          echo "result=$result" >> $GITHUB_OUTPUT
-      - name: Set output
-        id: set_output
-        run: echo "result=$result" | tee result.txt
+          echo "deploy=$deploy" >> $GITHUB_ENV
       - name: deploy
-        if: ${{ steps.set_output.outputs.result == '1' }}
+        if: ${{ env.deploy == '1' }}
         uses: yrpang/github-actions-hexo@v1.3
         with:
           deploykey: ${{ secrets.SSH_KEY }}
