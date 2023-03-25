@@ -1,7 +1,7 @@
 ---
 title: Github更换主邮箱导致无法登录Vultr
 date: 2023-03-25T05:21:25.000Z
-updated: 2023-03-25T06:21:01.000Z
+updated: 2023-03-25T06:28:04.000Z
 tags: ['建站','瞎折腾']
 ---
   
@@ -12,7 +12,7 @@ vultr 的 github 登录竟然是邮箱来识别的，真他妈的离谱。
 
 ## 蛋疼的过程
 
-昨天发现 vultr 登录不上去了，提示`Invalid username/password`但是服务器还是可以用的
+昨天发现 vultr 登录不上去了，提示`Invalid username/password`但是服务器还是可以用的。
 ![](images/1679723675602-a7e058a0-2970-4176-9b1d-0cbe4d296bce.png)
 网上有说是被封号/删号了。因为我这边的的服务器还是可用的， 所以我排除了这种可能性。
 
