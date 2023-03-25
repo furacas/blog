@@ -45,3 +45,4 @@ jobs:
           username: ci-bot
           email: ci@yeyu.im
           if_keep_commit_history: true
+          github_page_repository: furacas.github.io
