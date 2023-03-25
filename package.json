@@ -9,7 +9,6 @@
     "server": "hexo server",
     "sync": "yuque-hexo sync",
     "talk": "node gitalk-auto-init.js",
-    "d": "hexo clean && hexo generate && hexo deploy",
     "postinstall": "patch-package"
   },
   "hexo": {

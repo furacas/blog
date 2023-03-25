@@ -33,7 +33,6 @@ jobs:
               git commit -m "update cache"
               git push https://${GITHUB_TOKEN}@github.com/furacas/blog.git -f
               # build blog
-              npm run build
               deploy=1
           fi
           echo "deploy=$deploy" >> $GITHUB_ENV
