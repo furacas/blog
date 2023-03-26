@@ -34,12 +34,12 @@ jobs:
               git push https://${GITHUB_TOKEN}@github.com/furacas/blog.git -f
               # build blog
               deploy=1
-              cp README.md source/README.md
           fi
           if [[ $GITHUB_EVENT_NAME == 'workflow_dispatch' ]]; then
               deploy=1
           fi
           echo "deploy=$deploy" >> $GITHUB_ENV
+          cp README.md source/README.md
       - name: deploy
         if: ${{ env.deploy == '1' }}
         uses: yrpang/github-actions-hexo@v1.3
