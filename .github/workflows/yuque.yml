@@ -34,6 +34,7 @@ jobs:
               git push https://${GITHUB_TOKEN}@github.com/furacas/blog.git -f
               # build blog
               deploy=1
+              cp README.md source/README.md
           fi
           echo "deploy=$deploy" >> $GITHUB_ENV
       - name: deploy
