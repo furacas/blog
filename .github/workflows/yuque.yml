@@ -36,6 +36,9 @@ jobs:
               deploy=1
               cp README.md source/README.md
           fi
+          if [[ $GITHUB_EVENT_NAME == 'workflow_dispatch' ]]; then
+              deploy=1
+          fi
           echo "deploy=$deploy" >> $GITHUB_ENV
       - name: deploy
         if: ${{ env.deploy == '1' }}
