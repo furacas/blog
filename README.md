@@ -8,6 +8,7 @@
 - Butterfly 主题
 - yuque-hexo
 - Github Action
+- Vercel
 
 欢迎访问我的博客：https://www.furacas.com
 
