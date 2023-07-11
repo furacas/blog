@@ -44,6 +44,6 @@
     "adapter": "sync/adapter.js"
   },
   "devDependencies": {
-    "patch-package": "^6.5.1"
+    "patch-package": "^7.0.1"
   }
 }
