@@ -1,7 +1,7 @@
 ---
 title: k3s折腾笔记
 date: 2023-08-09T15:02:08.000Z
-updated: 2023-08-10T00:20:55.000Z
+updated: 2023-08-10T13:28:37.000Z
 tags: ['瞎折腾','k3s','k8s']
 ---
   
@@ -11,6 +11,21 @@ tags: ['瞎折腾','k3s','k8s']
 
 todo
 
+# Ingress 白名单中间件
+
+有一些服务需要仅内网访问，把白名单做成中间件的形式
+
+```bash
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: ip-whitelist
+spec:
+  ipWhiteList:
+    sourceRange:
+      - "10.0.0.0/16"
+```
+
 # 安装 Kubernetes Dashboard
 
 ```bash
@@ -19,7 +34,7 @@ sudo k3s kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard
 
 ### 创建一个 ServiceAccount 和 ClusterRoleBinding
 
-**dashboard-adminuser.yaml**
+**dashboard.yaml**
 
 ```yaml
 apiVersion: v1
@@ -44,5 +59,5 @@ subjects:
 ```
 
 ```bash
-sudo k3s kubectl apply -f dashboard-adminuser.yaml
+sudo k3s kubectl apply -f dashboard.yaml
 ```
