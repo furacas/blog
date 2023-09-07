@@ -1,7 +1,7 @@
 ---
 title: 搭建基于tailscale的k3s集群
 date: 2023-08-29T13:59:49.000Z
-updated: 2023-08-30T09:41:14.000Z
+updated: 2023-09-06T04:56:33.000Z
 tags: ['瞎折腾']
 ---
   
@@ -9,7 +9,7 @@ tags: ['瞎折腾']
 
 ## 安装 tailscale
 
-首先需要在全部的服务器上安装 zerotier 并且加入到网络里面
+首先需要在全部的服务器上安装 tailscale 并且加入到网络里面
 
 ```bash
 curl -fsSL https://tailscale.com/install.sh | sh
