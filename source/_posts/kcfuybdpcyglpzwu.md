@@ -1,13 +1,13 @@
 ---
 title: 解决longhorn卸载的问题
 date: 2023-10-18T23:10:17.000Z
-updated: 2023-10-18T23:51:01.000Z
+updated: 2023-10-19T03:00:36.000Z
 tags: ['k8s','问题随记']
 ---
   
 ## 背景
 
-longhorn 使用 helm 卸载的时候需要有一个[deleting-confirmation-flag](https://longhorn.io/docs/1.5.1/references/settings/#deleting-confirmation-flag)为 true，官方给的命令是
+longhorn 使用 helm 卸载的时候需要[deleting-confirmation-flag](https://longhorn.io/docs/1.5.1/references/settings/#deleting-confirmation-flag)为 true，官方给的命令是
 
 ```bash
 kubectl -n longhorn-system patch -p '{"value": "true"}' --type=merge lhs deleting-confirmation-flag
